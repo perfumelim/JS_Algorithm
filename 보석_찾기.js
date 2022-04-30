@@ -1,3 +1,3 @@
 var numJewelsInStones = function (jewels, stones) {
-  return stones.split("").filter((char) => jewels.indexOf(char) !== -1).length;
+  return [...stones].filter((stone) => jewels.indexOf(stone) !== -1).length;
 };
